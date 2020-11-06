@@ -2,9 +2,7 @@ import matplotlib.pyplot as plt
 from skimage.feature import canny
 from skimage import io
 
-image = io.imread('f16_rgb.png')[:,:,2]
-# plt.imshow(image)
-# plt.colorbar()
+image = io.imread('peppers_rgb.png')[:,:,0]
 fig, axes = plt.subplots(ncols=2, figsize=(10, 5))
 ax = axes.ravel()
 ax[0] = plt.subplot(1, 2, 1)
